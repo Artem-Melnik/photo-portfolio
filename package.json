@@ -1,0 +1,26 @@
+{
+  "name": "Photography Portfolio",
+  "version": "1.0.0",
+  "type": "module"
+  "description": "Artem Melnik's photography portfolio",
+  "main": "index.html",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "jQuery": "1.7.4",
+    "parcel-bundler": "^1.6.1",
+    "xmlhttprequest": "1.8.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1",
+    "@babel/core": "7.2.0",
+    "typescript": "4.4.4"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  },
+  "keywords": ["javascript", "starter"]
+}
