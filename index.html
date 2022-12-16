@@ -1,1 +1,71 @@
+<!DOCTYPE html class="scroll-smooth">
 
+<head>
+    <title>Photo Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="camera.css" />
+    <link rel="stylesheet" href="/dist/output.css">
+    <script type="text/javascript" src="https://releases.jquery.com/git/jquery-3.x-git.js"></script>
+    <script type='text/javascript'
+        src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js'></script>
+    <script src="https://cdn.blobity.dev/by.js"></script>
+    <script src="https://cdn.blobity.dev/by.js?autoStart&licenseKey=opensource"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="camera.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script> -->
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="home-page">
+        <div class="header">
+            <a class="text-3xl font-bold underline" href="/index.html">Artem Melnik</a>
+            <p class="subtitle">Photography Portfolio</p>
+            <!-- Why is there a both a <button> and an <a> tag for one element? -->
+            <button id="button" class="portfolio-btn"
+                onclick="scrollToClass('#portfolio-subtitle'); return false;">Portfolio</a>
+        </div>
+        <div class="slide-container">
+            <div class="camera_wrap">
+                <div data-src="assets/Flower.jpg"></div>
+                <div data-src="assets/Bee In Tree.jpeg"></div>
+                <div data-src="assets/Bee In Tree2.jpg"></div>
+                <div data-src="assets/Blue Dragonfly 2.jpg"></div>
+                <div data-src="assets/Bumblebee 2.jpg"></div>
+            </div>
+        </div>
+        <!-- <div class="photo-slides">
+            <img class="main-image" src="assets/Flower.jpg" alt="Flower" >
+        </div> -->
+    </div>
+    <!-- Where should I store images for my site? -->
+    <a id="portfolio" name="portfolio" />
+    <p id="portfolio-subtitle" class="subtitle">Portfolio</p>
+    <div class="photo-slide">
+        <!-- Where should I store images for my site? -->
+        <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-4 max-[]:90%">
+            <img class="rounded-2xl p-4 m-5 bg-gray-700/50 backdrop-blur-md shadow-blue-600 transition ease-in-out duration-300 hover:scale-105 hover:rounded-3xl hover:drop-shadow-lg hover:shadow-white hover:-translate-y-1"
+                src="assets/Bee In Tree.jpeg" alt="Flower">
+            <img class="rounded-2xl p-4 m-5 bg-gray-700/50 backdrop-blur-md shadow-blue-600 transition ease-in-out duration-300 hover:scale-105 hover:rounded-3xl hover:drop-shadow-lg hover:shadow-white hover:-translate-y-1"
+                src="assets/Bee In Tree2.jpg" alt="Flower">
+            <img class="rounded-2xl p-4 m-5 bg-gray-700/50 backdrop-blur-md shadow-blue-600 transition ease-in-out duration-300 hover:scale-105 hover:rounded-3xl hover:drop-shadow-lg hover:shadow-white hover:-translate-y-1"
+                src="assets/Blue Dragonfly 2.JPG" alt="Flower">
+            <img class="rounded-2xl p-4 m-5 bg-gray-700/50 backdrop-blur-md shadow-blue-600 transition ease-in-out duration-300 hover:scale-105 hover:rounded-3xl hover:drop-shadow-lg hover:shadow-white hover:-translate-y-1"
+                src="assets/Bee In Tree.jpeg" alt="Flower">
+            <img class="rounded-2xl p-4 m-5 bg-gray-700/50 backdrop-blur-md shadow-blue-600 transition ease-in-out duration-300 hover:scale-105 hover:rounded-3xl hover:drop-shadow-lg hover:shadow-white hover:-translate-y-1"
+                src="assets/Bee In Tree2.jpg" alt="Flower">
+            <img class="rounded-2xl p-4 m-5 bg-gray-700/50 backdrop-blur-md shadow-blue-600 transition ease-in-out duration-300 hover:scale-105 hover:rounded-3xl hover:drop-shadow-lg hover:shadow-white hover:-translate-y-1"
+                src="assets/Blue Dragonfly 2.JPG" alt="Flower">
+        </div>
+        <div class="rlative mx-auto rounded-lg overflow-hidden bg-blue-500">
+            <!-- <img class="relative mx-auto rounded-lg overflow-hidden" src="assets/Flower.jpg" alt="Flower"> -->
+        </div>
+        <button class="bg-accent rounded-xl px-5 py-3" href="html/life_through_my_lens.html" id="button"
+            onclick="location.href='/html/life_through_my_lens.html';">Life Through My Lens
+        </button>
+
+    </div>
+</body>
