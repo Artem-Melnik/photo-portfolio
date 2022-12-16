@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Photo Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo.svg" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/camera.css" />
+    <link rel="stylesheet" href="/dist/output.css">
+    <script type="text/javascript" src="https://releases.jquery.com/git/jquery-3.x-git.js"></script>
+    <script type='text/javascript'
+        src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js'></script>
+    <script src="https://cdn.blobity.dev/by.js"></script>
+    <script src="https://cdn.blobity.dev/by.js?autoStart&licenseKey=opensource"></script>
+    <script type="text/javascript" src="/index.js"></script>
+    <script type="text/javascript" src="/camera.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script> -->
+</head>
+
+<body class="overflow-scroll bg-[url('/assets/dot-grid.png')]">
+    <div class="cursor"></div>
+    <div class="home-page">
+        <div class="header">
+            <a class="text-3xl font-bold underline" href="/index.html">Artem Melnik</a>
+            <p class="subtitle">Photography Portfolio</p>
+            <button id="button" class="portfolio-btn"
+                onclick="scrollToClass('#portfolio-subtitle'); return false;">Portfolio<a>
+        </div>
+    </div>
+    <div class="grid grid-cols-3 gap-4">
+        <div class="p-10 bg-black w-10 h-5">01</div>
+        <div class="p-10 bg-black w-10 h-5">02</div>
+        <div class="p-10 bg-black w-10 h-5">03</div>
+        <div class="col-span-2 p-10 bg-black w-10 h-5">04</div>
+        <div class="p-10 bg-black w-10 h-5">05</div>
+        <div class="p-10 bg-black w-10 h-5">06</div>
+        <div class="col-span-2 p-10 bg-black w-10 h-5">07</div>
+    </div>
+    <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-4">
+        <div class="col-span-2 rounded-2xl p-4 m-5">
+            <img class="rounded-md" src="/assets/LTML Project/Leaf Texture.jpg" alt="Leaf Texture">
+            <p class="text-xl text-center mt-5">Texture</p>
+        </div>
+        <div class="rounded-2xl p-4 m-5">
+            <img class="rounded-md" src="/assets/LTML Project/Fisher Middle.jpg" alt="Fisher Middle">
+            <p class="text-xl text-center mt-5">Negative Space</p>
+        </div>
+        <div class="rounded-2xl p-4 m-5">
+            <img class="rounded-md" src="/assets/LTML Project/Symmetry.jpg" alt="Symmetry">
+            <p class="text-xl text-center mt-5">Symmetry</p>
+        </div>
+        <div class="rounded-2xl p-4 m-5">
+            <img class="rounded-md" src="/assets/LTML Project/Light Painting.jpg" alt="Light Painting">
+            <p class="text-xl text-center mt-5">Light Painting</p>
+        </div>
+        <div class="rounded-2xl p-4 m-5">
+            <img class="rounded-md" src="/assets/LTML Project/Cave Light.jpg" alt="Cave Light">
+            <p class="text-xl text-center mt-5">Night Time</p>
+        </div>
+    </div>
+</body>
