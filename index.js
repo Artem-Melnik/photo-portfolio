@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     const options = {
         color: 'rgb(180, 180, 180)',
         zIndex: -1, focusableElements: 'button',
@@ -10,22 +11,37 @@ $(document).ready(function () {
         focusableElementsOffsetY: 5,
         magnetic: true
     };
+
     new Blobity(options);
-    jQuery('.camera_wrap').camera({
-        time: 3000,
-        // height: '400px',
-        // loader: 'bar',
-        // pagination: true,
-        // thumbnails: true,
-        // imagePath: 'assets/',
-        overlayer: true,
-        fx: 'random',
-    }); //the basic method
-    $('.slide-container')
-        .on('animationend', function () {
-            $('body').css('overflow', 'scroll');
-        })
-        .visible(true);
+    if ($('#slider').length == 0) {
+        jQuery('.camera_wrap').camera({
+            time: 3000,
+            // height: '400px',
+            // loader: 'bar',
+            // pagination: true,
+            // thumbnails: true,
+            // imagePath: 'assets/',
+            overlayer: true,
+            fx: 'random',
+        }); //the basic method
+        $('.slide-container')
+            .on('animationend', function () {
+                $('body').css('overflow', 'scroll');
+            })
+            .visible(true);
+    }
+
+
+
+    console.log('#slider', $('#slider'));
+
+    $("#slider").on("input change", (e) => {
+        const sliderPos = e.target.value;
+        console.log(sliderPos);
+        $('#comparable2').css('clip-path', 'inset(0px ' + (100 - sliderPos) + '% 0px 0px)')
+        $('#slider-handle').css('left', `calc(${sliderPos}% - 1.25rem)`)
+        $('#slider-line').css('left', `calc(${sliderPos}% - 1px)`)
+    });
 });
 
 function scrollToClass(targetSelector) {

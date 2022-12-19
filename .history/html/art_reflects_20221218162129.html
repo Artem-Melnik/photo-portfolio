@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- <base href="https://artem-melnik.github.io/photo-portfolio/"> -->
+    <base href="http://localhost:8080/">
+    <title>Photo Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="camera.css" />
+    <link rel="stylesheet" href="dist/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="https://releases.jquery.com/git/jquery-3.x-git.js"></script>
+    <script type='text/javascript'
+        src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js'></script>
+    <script src="https://cdn.blobity.dev/by.js"></script>
+    <script src="https://cdn.blobity.dev/by.js?autoStart&licenseKey=opensource"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="camera.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script> -->
+</head>
+
+<body class="overflow-scroll bg-[url('assets/dot-grid.png')]">
+    <div class="cursor"></div>
+    <div class="home-page">
+        <div
+            class="bg-black p-3 flex flex-1 font-regular font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            <a
+                class="pr-10 ml-8 flex flex-shrink text-3xl underline font-black font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Artem
+                Melnik</a>
+            <p class="flex flex-shrink subtitle">Photography Portfolio // Art Reflects Nature</p>
+        </div>
+    </div>
+    <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-4">
+        <div class="p-4 m-5">
+            <p class="text-lg">In this project, I tried to show the beauty of nature and the outdoors by showing
+                different types of landscapes and locations. In order to share my views with the viewer, I used various
+                editing techniques and interesting color palettes. By illustrating these diverse scenes, I hope to
+                inspire the viewer to enjoy the outdoors and protect our wonderful planet.</p>
+        </div>
+        <div
+            class="inline-block rounded-2xl p-4 m-5 col-span-2 bg-gray-700/50 backdrop-blur-md shadow-blue-600 transition ease-in-out duration-300 hover:scale-105 hover:rounded-3xl hover:drop-shadow-lg hover:shadow-white hover:-translate-y-1">
+            <img class="mb-5 rounded-md" src="assets/Art Reflects/Mountain.jpg" alt="Mountain photo">
+            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
+                Mountain</span>
+            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
+                f/1.7</span>
+            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
+                1/1200 sec</span>
+            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
+                ISO-125</span>
+        </div>
+        <div class="inline-block rounded-2xl p-4 m-5 col-span-2 bg-gray-700/50 backdrop-blur-md shadow-blue-600 transition
+                ease-in-out duration-300 hover:scale-105 hover:rounded-3xl hover:drop-shadow-lg hover:shadow-white
+                hover:-translate-y-1">
+            <img class="mb-5 rounded-md" src="assets/Art Reflects/Plain.jpg" alt="Plain photo">
+            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
+                Plain</span>
+            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
+                f/1.6</span>
+            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
+                1/125 sec</span>
+            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
+                ISO-125</span>
+        </div>
+        <div class="p-4 m-5">
+            <p>This photo represents the plains, fields, and valleys of the world. It shows how they are important, from
+                building roads easily to allowing farming for growing the food that people need to live.</p>
+        </div>
+        <div class="p-4 m-5">
+            <p class="text-lg">For my next image, I decided to illustrate the hills all around us in California. This is
+                also the photo that I wanted to show a before to after edit for to show the viewer the color correction
+                and editing done in order to improve it.</p>
+        </div>
+        <div
+            class="rounded-2xl p-4 m-5 col-span-2 bg-gray-700/50 backdrop-blur-md shadow-blue-600 transition ease-in-out duration-300 hover:scale-105 hover:rounded-3xl hover:drop-shadow-lg hover:shadow-white hover:-translate-y-1">
+            <div class="overflow-hidden mb-5 grid grid-cols-1">
+                <img id="comparable1" class="row-start-1 col-start-1 rounded-md" src="assets/Art Reflects/Hills.jpg"
+                    alt="Hills Edited photo">
+                <img style="clip-path:inset(0px 50% 0px 0px)" id="comparable2"
+                    class="row-start-1 col-start-1 rounded-md" src="assets/Art Reflects/Hills Original.jpg"
+                    alt="Hills Original photo">
+                <input type="range" min="1" max="100" value="50" id="slider" class="z-10 row-start-1 col-start-1">
+                <div id="slider-button" class="z-20 absolute w-4 h-4 rounded-full"></div>
+            </div>
+            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
+                Hills</span>
+            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
+                f/2.2</span>
+            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
+                1/240 sec</span>
+            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
+                ISO-100 </span>
+        </div>
+        <div class="inline-block rounded-2xl p-4 m-5 col-span-2 bg-gray-700/50 backdrop-blur-md shadow-blue-600 transition
+                ease-in-out duration-300 hover:scale-105 hover:rounded-3xl hover:drop-shadow-lg hover:shadow-white
+                hover:-translate-y-1">
+            <img class="mb-5 rounded-md" src="assets/Art Reflects/Ocean.jpeg" alt="Ocean photo">
+            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
+                Ocean</span>
+            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
+                f/1.6</span>
+            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
+                1/125 sec</span>
+            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
+                ISO-125</span>
+        </div>
+        <div class="p-4 m-5">
+            <p>This is one of my favorite photos due to the all of the vibrant colors of the sunset. The light orange to
+                deep pink gradient creates a perfect contrast with the saturated blue color of the ocean, emphasizing
+                the horizon line.</p>
+        </div>
+        <div class="p-4 m-5">
+            <p class="text-lg">This is another one of my best images that I have taken due to the composition of it. The
+                trolley on the left fills about two thirds of the photo, and the person crossing the street is located
+                at the beginning of the next third. Additionally, the bottom half of the image is filled with various
+                buildings, poles, and wires, while the foggy sky is of a simple grey color.
+            </p>
+        </div>
+        <div
+            class="inline-block rounded-2xl p-4 m-5 col-span-2 bg-gray-700/50 backdrop-blur-md shadow-blue-600 transition ease-in-out duration-300 hover:scale-105 hover:rounded-3xl hover:drop-shadow-lg hover:shadow-white hover:-translate-y-1">
+            <img class="mb-5 rounded-md" src="assets/Art Reflects/Urban.jpg" alt="Urban photo">
+            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
+                Urban</span>
+            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
+                f/1.6</span>
+            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
+                1/125 sec</span>
+            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
+                ISO-125</span>
+        </div>
+    </div>
+</body>
