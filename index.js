@@ -1,8 +1,12 @@
 $(document).ready(function () {
 
+    console.log('Test');
+
+    console.log('Test2');
+
     const options = {
         color: 'rgb(180, 180, 180)',
-        zIndex: -1, focusableElements: 'button',
+        zIndex: 100, focusableElements: 'button',
         dotColor: '#1f6feb',
         mode: 'bouncy',
         opacity: 0.75,
@@ -19,7 +23,7 @@ $(document).ready(function () {
             // height: '400px',
             // loader: 'bar',
             // pagination: true,
-            // thumbnails: true,
+            // thumbnails: true, 
             // imagePath: 'assets/',
             overlayer: true,
             fx: 'random',
