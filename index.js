@@ -52,38 +52,25 @@ $(document).ready(function () {
         // document.location.hash = "#" + $(targetSelector).eq(0).attr('name');
     }
 
-
-    for (var i = 1; i <= 10; i++) {
-        (function (x) {
-            $('#step' + x).click(function () {
-                $('#rose-image').attr('src', 'assets/Creative Editing/Rose Steps/step' + x + '.jpg');
-            })
-        })(i);
+    function addSteps(stepsNumber, imageId, stepsFolder) {
+        console.log("Adding steps for ", imageId);
+        for (var i = 1; i <= stepsNumber; i++) {
+            (function (x) {
+                var stepName = i == stepsNumber ? "Final" : "Step " + x;
+                var $step = $('<span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-gray-500">' + stepName + '</span>');
+                $step.click(function () {
+                    $('#' + imageId).attr('src', stepsFolder + 'step' + x + '.jpg');
+                });
+                $('#' + imageId).parent().append($step);
+                console.log("ADded step " + x);
+            })(i);
+        }
     }
 
-    for (var i = 1; i <= 5; i++) {
-        (function (x) {
-            $('#crane-step' + x).click(function () {
-                $('#crane-image').attr('src', 'assets/Creative Editing/Crane Steps/step' + x + '.jpg');
-            })
-        })(i);
-    }
-
-    for (var i = 1; i <= 5; i++) {
-        (function (x) {
-            $('#paragliding-step' + x).click(function () {
-                $('#paragliding-image').attr('src', 'assets/Creative Editing/Paragliding Steps/step' + x + '.jpg');
-            })
-        })(i);
-    }
-
-    for (var i = 1; i <= 6; i++) {
-        (function (x) {
-            $('#stairway-step' + x).click(function () {
-                $('#stairway-image').attr('src', 'assets/Creative Editing/Stairway Steps/step' + x + '.jpg');
-            })
-        })(i);
-    }
+    addSteps(10, 'rose-image', 'assets/Creative Editing/Rose Steps/');
+    addSteps(5, 'crane-image', 'assets/Creative Editing/Crane Steps/');
+    addSteps(5, 'paragliding-image', 'assets/Creative Editing/Paragliding Steps/');
+    addSteps(6, 'stairway-image', 'assets/Creative Editing/Stairway Steps/');
     // Function for mouse cursor
 
     // $(document).on('mousemove', function(e){
