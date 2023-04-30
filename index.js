@@ -56,7 +56,7 @@ $(document).ready(function () {
     for (var i = 1; i <= 10; i++) {
         (function (x) {
             $('#step' + x).click(function () {
-                $('#rose-image').attr('src', '/assets/Creative Editing/Rose Steps/step' + x + '.jpg');
+                $('#rose-image').attr('src', 'assets/Creative Editing/Rose Steps/step' + x + '.jpg');
             })
         })(i);
     }
@@ -64,7 +64,7 @@ $(document).ready(function () {
     for (var i = 1; i <= 5; i++) {
         (function (x) {
             $('#crane-step' + x).click(function () {
-                $('#crane-image').attr('src', '/assets/Creative Editing/Crane Steps/step' + x + '.jpg');
+                $('#crane-image').attr('src', 'assets/Creative Editing/Crane Steps/step' + x + '.jpg');
             })
         })(i);
     }
@@ -72,7 +72,7 @@ $(document).ready(function () {
     for (var i = 1; i <= 5; i++) {
         (function (x) {
             $('#paragliding-step' + x).click(function () {
-                $('#paragliding-image').attr('src', '/assets/Creative Editing/Paragliding Steps/step' + x + '.jpg');
+                $('#paragliding-image').attr('src', 'assets/Creative Editing/Paragliding Steps/step' + x + '.jpg');
             })
         })(i);
     }
@@ -80,7 +80,7 @@ $(document).ready(function () {
     for (var i = 1; i <= 6; i++) {
         (function (x) {
             $('#stairway-step' + x).click(function () {
-                $('#stairway-image').attr('src', '/assets/Creative Editing/Stairway Steps/step' + x + '.jpg');
+                $('#stairway-image').attr('src', 'assets/Creative Editing/Stairway Steps/step' + x + '.jpg');
             })
         })(i);
     }
