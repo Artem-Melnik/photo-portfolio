@@ -46,6 +46,18 @@ $(document).ready(function () {
         $('#slider-handle').css('left', `calc(${sliderPos}% - 1.25rem)`)
         $('#slider-line').css('left', `calc(${sliderPos}% - 1px)`)
     });
+
+    $('#step1').click(function () {
+        $('#rose-image').attr('src', 'image1.jpg');
+    });
+
+    $('#step2').click(function () {
+        $('#my-image').attr('src', 'image2.jpg');
+    });
+
+    $('#step3').click(function () {
+        $('#my-image').attr('src', 'image3.jpg');
+    });
 });
 
 function scrollToClass(targetSelector) {

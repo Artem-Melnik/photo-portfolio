@@ -1,9 +1,5 @@
 $(document).ready(function () {
 
-    console.log('Test');
-
-    console.log('Test2');
-
     const options = {
         color: 'rgb(180, 180, 180)',
         zIndex: 100, focusableElements: 'button',
@@ -16,26 +12,28 @@ $(document).ready(function () {
         magnetic: true
     };
 
+
+
     new Blobity(options);
-    if ($('#slider').length == 0) {
+    if ($('#slider').length == 0 && $('.camera_pie').length > 0) {
         jQuery('.camera_wrap').camera({
             time: 3000,
             // height: '400px',
             // loader: 'bar',
             // pagination: true,
-            // thumbnails: true,
+            // thumbnails: true, 
             // imagePath: 'assets/',
             overlayer: true,
             fx: 'random',
         }); //the basic method
+
+
         $('.slide-container')
             .on('animationend', function () {
                 $('body').css('overflow', 'scroll');
             })
             .visible(true);
     }
-
-
 
     console.log('#slider', $('#slider'));
 
@@ -46,20 +44,27 @@ $(document).ready(function () {
         $('#slider-handle').css('left', `calc(${sliderPos}% - 1.25rem)`)
         $('#slider-line').css('left', `calc(${sliderPos}% - 1px)`)
     });
-});
 
-function scrollToClass(targetSelector) {
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $(targetSelector).eq(0).offset().top
-    }, 500);
-    // document.location.hash = "#" + $(targetSelector).eq(0).attr('name');
-}
+    function scrollToClass(targetSelector) {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(targetSelector).eq(0).offset().top
+        }, 500);
+        // document.location.hash = "#" + $(targetSelector).eq(0).attr('name');
+    }
 
-// Function for mouse cursor
 
-// $(document).on('mousemove', function(e){
-//     $('.cursor').css({
-//        left:  e.pageX,
-//        top:   e.pageY
-//     });
-// });
+    for (var i = 1; i <= 9;) {
+        $('#step' + i).click(function () {
+            $('#rose-image').attr('src', '/assets/Creative Editing/Rose Steps/step' + i + '.jpg');
+        });
+        i++;
+    }
+    // Function for mouse cursor
+
+    // $(document).on('mousemove', function(e){
+    //     $('.cursor').css({
+    //        left:  e.pageX,
+    //        top:   e.pageY
+    //     });
+    // });
+})

@@ -46,20 +46,22 @@ $(document).ready(function () {
         $('#slider-handle').css('left', `calc(${sliderPos}% - 1.25rem)`)
         $('#slider-line').css('left', `calc(${sliderPos}% - 1px)`)
     });
-});
 
-// function scrollToClass(targetSelector) {
-//     $([document.documentElement, document.body]).animate({
-//         scrollTop: $(targetSelector).eq(0).offset().top
-//     }, 500);
-//     // document.location.hash = "#" + $(targetSelector).eq(0).attr('name');
-// }
+    function scrollToClass(targetSelector) {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(targetSelector).eq(0).offset().top
+        }, 500);
+        // document.location.hash = "#" + $(targetSelector).eq(0).attr('name');
+    }
 
-// Function for mouse cursor
 
-// $(document).on('mousemove', function(e){
-//     $('.cursor').css({
-//        left:  e.pageX,
-//        top:   e.pageY
-//     });
-// });
+
+    // Function for mouse cursor
+
+    // $(document).on('mousemove', function(e){
+    //     $('.cursor').css({
+    //        left:  e.pageX,
+    //        top:   e.pageY
+    //     });
+    // });
+})

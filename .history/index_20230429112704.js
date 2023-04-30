@@ -23,7 +23,7 @@ $(document).ready(function () {
             // height: '400px',
             // loader: 'bar',
             // pagination: true,
-            // thumbnails: true,
+            // thumbnails: true, 
             // imagePath: 'assets/',
             overlayer: true,
             fx: 'random',
@@ -46,14 +46,13 @@ $(document).ready(function () {
         $('#slider-handle').css('left', `calc(${sliderPos}% - 1.25rem)`)
         $('#slider-line').css('left', `calc(${sliderPos}% - 1px)`)
     });
-});
 
-function scrollToClass(targetSelector) {
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $(targetSelector).eq(0).offset().top
-    }, 500);
-    // document.location.hash = "#" + $(targetSelector).eq(0).attr('name');
-}
+    function scrollToClass(targetSelector) {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(targetSelector).eq(0).offset().top
+        }, 500);
+        // document.location.hash = "#" + $(targetSelector).eq(0).attr('name');
+    }
 
 // Function for mouse cursor
 
