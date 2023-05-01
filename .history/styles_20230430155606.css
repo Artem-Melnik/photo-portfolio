@@ -1,6 +1,6 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import "tailwindcss/base.css";
+@import "tailwindcss/components.css";
+@import "tailwindcss/utilities.css";
 
 :root {
     --bg1: #0d1117;
@@ -149,6 +149,8 @@ button {
     color: blue;
     height: 20px;
 }
+
+.selected-step {}
 
 /* .life-through-my-lens-btn {
         width: fit-content;

@@ -150,6 +150,10 @@ button {
     height: 20px;
 }
 
+.selected-btn {
+    background-color: #2ea043 !important;
+}
+
 /* .life-through-my-lens-btn {
         width: fit-content;
         height: fit-content;

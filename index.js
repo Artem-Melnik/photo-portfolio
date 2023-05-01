@@ -6,7 +6,7 @@ $(document).ready(function () {
         dotColor: '#1f6feb',
         mode: 'bouncy',
         opacity: 0.75,
-        radius: 12,
+        radius: 16,
         focusableElementsOffsetX: 5,
         focusableElementsOffsetY: 5,
         magnetic: true
@@ -57,12 +57,23 @@ $(document).ready(function () {
         for (var i = 1; i <= stepsNumber; i++) {
             (function (x) {
                 var stepName = i == stepsNumber ? "Final" : "Step " + x;
-                var $step = $('<span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-gray-500">' + stepName + '</span>');
+                var className = i == stepsNumber ? "selected-btn " : "";
+                var $step = $('<button class="' + className + 'inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-gray-500">' + stepName + '</button>');
                 $step.click(function () {
-                    $('#' + imageId).attr('src', stepsFolder + 'step' + x + '.jpg');
+                    $('#' + imageId).animate(
+                        { opacity: 0, },
+                        {
+                            easing: "linear",
+                            duration: 200,
+                            complete: function () {
+                                $('#' + imageId)
+                                    .attr('src', stepsFolder + 'step' + x + '.jpg')
+                                    .on("load", function () { $('#' + imageId).animate({ opacity: 1, }, 200) })
+                            }
+                        });
+                    $step.addClass('selected-btn').siblings().removeClass('selected-btn');
                 });
                 $('#' + imageId).parent().append($step);
-                console.log("ADded step " + x);
             })(i);
         }
     }
