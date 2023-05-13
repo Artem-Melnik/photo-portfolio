@@ -24,60 +24,25 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script> -->
-    <style>
-        .outer {
-            height: 550px;
-            width: 550px;
-            transform-style: preserve-3d;
-            transform: perspective(300px);
-            background: url("assets/Passion Project/Bottom Layer.png");
-            background-size: cover;
-        }
-
-        .inner {
-            width: 500px;
-            height: 500px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translateZ(70px) translate(-50%, -50%);
-            box-shadow: inset 0 0 50px 0 rgb(51, 51, 51);
-        }
-    </style>
 </head>
 
 <body class="overflow-scroll bg-[url('assets/dot-grid.png')] bg-fixed">
     <div class="cursor"></div>
-
-    <div data-tilt data-tilt-startX="200" data-tilt-startY="-200" data-tilt-reset-to-start="false" class="outer">
-        <img src="assets/Passion Project/Top Layer.png" class="inner">
-    </div>
-
     <div class="home-page">
         <div
             class="bg-black p-3 flex flex-1 font-regular font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
             <a
                 class="pr-10 ml-8 flex flex-shrink text-3xl underline font-black font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Artem
                 Melnik</a>
-            <p class="flex flex-shrink subtitle">Photography Portfolio // Passion Project</p>
+            <p class="flex flex-shrink subtitle">Photography Portfolio // Poster Project</p>
         </div>
     </div>
-    <div class="snap-y snap-proximity snap-center grid lg:grid-cols-4 sm:grid-cols-2 gap-4">
-        <!-- Figure out problem with quotes -->
-        <div data-tilt data-tilt-speed='1000' class="inline-block rounded-2xl p-4 m-5 col-start-2 col-span-2 bg-gray-700/50 backdrop-blur-md
-            shadow-blue-600 transition ease-in-out duration-300 hover:scale-105 hover:rounded-3xl hover:drop-shadow-lg
-            hover:shadow-white hover:-translate-y-1">
-            <div
-                style="width: 300px; height: 300px; background-color: blue; position:absolute; top: 50%; left: 50%; transform: translateZ(30px) translateX(-50%) translateY(-50%);">
-                <!-- span style="width: 300px; height: 300px;"
-                    class="inline-block shadow-md px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
-                    Ocean Corridor</span -->
-            </div>
-            <img class="mb-5 rounded-md" src="assets/Passion Project/Ocean Corridor.webp" alt="Ocean Corridor photo">
-
-            <!-- Replace this with another detail -->
+    <div class="snap-y snap-proximity snap-center grid lg:grid-cols-5 sm:grid-cols-2 gap-4">
+        <div data-tilt data-tilt-speed='1000' data-tilt-scale="0.9"
+            class="inline-block rounded-2xl p-4 m-5 col-start-1 col-span-3 bg-gray-700/50  shadow-blue-600 transition ease-in-out duration-300 hover:scale-105 hover:rounded-3xl hover:drop-shadow-lg hover:shadow-white hover:-translate-y-1">
+            <img class="mb-5 rounded-md" src="assets/Poster Project/Beautiful Paths.webp" alt="Beautiful Paths photo">
             <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
-                Texture</span>
+                Beautiful Paths</span>
             <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
                 f/1.6</span>
             <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
@@ -85,21 +50,11 @@
             <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
                 ISO-101</span>
         </div>
-        <div class="inline-block rounded-2xl p-4 m-5 col-span-2 bg-gray-700/50 backdrop-blur-md shadow-blue-600 transition
+        <div class="inline-block rounded-2xl p-4 m-5 col-span-2 bg-gray-700/50 shadow-blue-600 transition
                 ease-in-out duration-300 hover:scale-105 hover:rounded-3xl hover:drop-shadow-lg hover:shadow-white
                 hover:-translate-y-1">
-            <img class="mb-5 rounded-md" src="assets/Passion Project/Dual Clouds.webp" alt="Dual Clouds photo">
-            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
-                Dual Clouds</span>
-            <!-- Replace this with another detail -->
-            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
-                Emphasis/Balance</span>
-            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
-                f/1.6</span>
-            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
-                1/792 sec</span>
-            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
-                ISO-99</span>
+            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold">
+                Lonely Rock</span>
         </div>
         <div class="inline-block rounded-2xl p-4 m-5 col-span-2 bg-gray-700/50 backdrop-blur-md shadow-blue-600 transition
                 ease-in-out duration-300 hover:scale-105 hover:rounded-3xl hover:drop-shadow-lg hover:shadow-white
@@ -107,8 +62,6 @@
             <img class="mb-5 rounded-md" src="assets/EOA POD/Rainy Day.jpg" alt="Rainy Day photo">
             <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
                 Rainy Day</span>
-            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
-                Line</span>
             <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
                 f/1.6</span>
             <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
@@ -121,8 +74,6 @@
             <img class="mb-5 rounded-md" src="assets/EOA POD/Leaves.jpg" alt="Nature Focus photo">
             <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
                 Nature Focus</span>
-            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
-                Emphasis</span>
             <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
                 f/1.6</span>
             <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
@@ -137,8 +88,6 @@
             <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
                 Flames of Warmth</span>
             <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
-                Movement/Pattern</span>
-            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
                 f/13</span>
             <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
                 1/170 sec</span>
@@ -150,8 +99,6 @@
             <img class="mb-5 rounded-md" src="assets/EOA POD/Berries.jpg" alt="Vibrant Berries photo">
             <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
                 Vibrant Berries</span>
-            <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
-                Color</span>
             <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
                 f/10</span>
             <span class="inline-block px-3 py-2 mr-2 text-base rounded-xl font-semibold bg-blue-500">
